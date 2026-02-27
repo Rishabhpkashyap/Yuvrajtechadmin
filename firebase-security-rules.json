@@ -1,0 +1,56 @@
+{
+  "rules": {
+    ".read": false,
+    ".write": false,
+    
+    "licenses": {
+      ".read": "auth != null",
+      "$licenseKey": {
+        ".write": "auth != null",
+        ".validate": "newData.hasChildren(['name', 'fullKey', 'status', 'createdAt'])"
+      }
+    },
+      "popup_content": {
+      ".read": true,
+      ".write": false
+    },
+    "extension_access": {
+      ".read": true,
+      "$licenseKey": {
+        ".write": "!data.exists() || !data.child('fingerprint').exists() || data.child('fingerprint').val() == null || data.child('fingerprint').val() == newData.child('fingerprint').val()",
+        ".validate": "newData.hasChildren(['name', 'fullKey', 'status'])",
+        "fingerprint": {
+          ".write": "!data.exists() || data.val() == null || data.val() == newData.val()"
+        }
+      }
+    },
+    
+    "license_validation": {
+      ".read": true,
+      "$licenseKey": {
+        ".write": true,
+        ".validate": "newData.hasChildren(['fingerprint', 'lastUsed'])"
+      }
+    },
+    
+    "admin_users": {
+      ".read": "auth != null",
+      ".write": "auth != null && root.child('admin_users').child(auth.uid).child('permissions').child('manage_users').val() == true"
+    },
+    
+    "analytics": {
+      ".read": "auth != null",
+      ".write": "auth != null"
+    },
+    
+    "system_config": {
+      ".read": "auth != null",
+      ".write": "auth != null && root.child('admin_users').child(auth.uid).child('role').val() == 'super_admin'"
+    },
+    
+    "audit_logs": {
+      ".read": "auth != null",
+      ".write": "auth != null"
+    }
+  }
+}

@@ -1,0 +1,399 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+  
+  body {
+    @apply min-h-screen text-white overflow-x-hidden;
+    background: #0a0a0a;
+    background-attachment: fixed;
+  }
+  
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(63, 63, 70, 0.5) transparent;
+  }
+  
+  *::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background: rgba(63, 63, 70, 0.5);
+    border-radius: 3px;
+  }
+  
+  *::-webkit-scrollbar-thumb:hover {
+    background: rgba(63, 63, 70, 0.8);
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-gradient-to-r from-violet-600 via-purple-600 to-blue-600 text-white px-6 py-3 rounded-xl font-semibold hover:shadow-2xl hover:shadow-purple-500/25 transition-all duration-300 text-sm md:text-base transform hover:-translate-y-1 hover:scale-105 relative overflow-hidden;
+  }
+  
+  .btn-primary::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.5s;
+  }
+  
+  .btn-primary:hover::before {
+    left: 100%;
+  }
+  
+  .btn-secondary {
+    @apply bg-slate-800/60 text-gray-300 px-6 py-3 rounded-xl font-semibold hover:bg-slate-700/60 hover:text-violet-400 transition-all duration-300 border border-slate-600/50 text-sm md:text-base backdrop-blur-sm hover:border-violet-500/50 hover:shadow-lg hover:shadow-violet-500/10;
+  }
+  
+  .btn-danger {
+    @apply bg-gradient-to-r from-accent-red to-red-600 text-white px-4 py-2 md:px-6 md:py-3 rounded-lg font-semibold hover:shadow-lg hover:shadow-red-500/25 transition-all duration-300 text-sm md:text-base transform hover:-translate-y-0.5;
+  }
+  
+  .btn-success {
+    @apply bg-gradient-primary text-dark-950 px-4 py-2 md:px-6 md:py-3 rounded-lg font-semibold hover:shadow-glow transition-all duration-300 text-sm md:text-base transform hover:-translate-y-0.5;
+  }
+  
+  .btn-warning {
+    @apply bg-gradient-to-r from-accent-orange to-yellow-500 text-white px-4 py-2 md:px-6 md:py-3 rounded-lg font-semibold hover:shadow-lg hover:shadow-yellow-500/25 transition-all duration-300 text-sm md:text-base transform hover:-translate-y-0.5;
+  }
+  
+  .card {
+    @apply relative rounded-2xl border border-violet-500/20 p-6 md:p-8 backdrop-blur-xl overflow-hidden;
+    background: linear-gradient(135deg, 
+      rgba(30, 27, 75, 0.7) 0%, 
+      rgba(15, 23, 42, 0.8) 50%, 
+      rgba(30, 27, 75, 0.7) 100%);
+    box-shadow: 
+      0 20px 40px rgba(0, 0, 0, 0.4),
+      0 8px 24px rgba(139, 92, 246, 0.15),
+      inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  }
+  
+  .card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, rgba(139, 92, 246, 0.6), rgba(59, 130, 246, 0.6), transparent);
+  }
+  
+  .card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(139, 92, 246, 0.05) 0%, transparent 50%, rgba(59, 130, 246, 0.05) 100%);
+    pointer-events: none;
+  }
+  
+  .glass-card {
+    @apply relative rounded-xl border border-primary-500/20 backdrop-blur-xl overflow-hidden;
+    background: linear-gradient(135deg, 
+      rgba(30, 41, 59, 0.4) 0%, 
+      rgba(12, 18, 32, 0.6) 50%, 
+      rgba(2, 6, 23, 0.8) 100%);
+    box-shadow: 
+      0 8px 32px rgba(0, 0, 0, 0.3),
+      0 4px 16px rgba(14, 165, 233, 0.1),
+      inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  }
+  
+  .glass-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(14, 165, 233, 0.2), transparent);
+  }
+  
+  .input-field {
+    @apply w-full px-4 py-3 md:px-5 md:py-4 bg-slate-800/60 border border-slate-600/50 rounded-xl focus:ring-2 focus:ring-violet-500/50 focus:border-violet-500 outline-none transition-all duration-300 text-gray-100 placeholder-gray-400 text-sm md:text-base backdrop-blur-sm hover:border-violet-500/30 hover:bg-slate-700/60;
+  }
+  
+  .status-badge {
+    @apply px-2 py-1 md:px-3 md:py-1 rounded-full text-xs font-semibold uppercase tracking-wide backdrop-blur-sm;
+  }
+  
+  .status-active {
+    @apply bg-primary-500/20 text-primary-400 border border-primary-500/30;
+  }
+  
+  .status-suspended {
+    @apply bg-accent-orange/20 text-orange-400 border border-accent-orange/30;
+  }
+  
+  .status-revoked {
+    @apply bg-accent-red/20 text-red-400 border border-accent-red/30;
+  }
+  
+  .bound-yes {
+    @apply bg-primary-500/20 text-primary-400 border border-primary-500/30;
+  }
+  
+  .bound-no {
+    @apply bg-dark-600/50 text-gray-400 border border-dark-500/50;
+  }
+  
+  .glass-header {
+    @apply bg-dark-900/80 border-b border-primary-500/20 shadow-glass backdrop-blur-md;
+  }
+  
+  .glass-sidebar {
+    @apply bg-dark-900/90 border-r border-primary-500/20 backdrop-blur-md;
+  }
+  
+  .nav-item {
+    @apply flex items-center px-3 py-2 md:px-4 md:py-3 rounded-lg transition-all duration-300 text-gray-400 hover:text-primary-400 hover:bg-primary-500/10 text-sm md:text-base;
+  }
+  
+  .nav-item.active {
+    @apply bg-gradient-glass text-primary-400 border border-primary-500/30 shadow-glow-sm;
+  }
+  
+  .stat-card {
+    @apply glass-card p-4 md:p-6 hover:border-primary-500/40 hover:shadow-glow-sm transition-all duration-300;
+  }
+  
+  .table-row {
+    @apply hover:bg-primary-500/5 transition-all duration-200 border-b border-dark-700/50;
+  }
+  
+  .mobile-menu {
+    @apply fixed inset-0 bg-black/70 backdrop-blur-sm z-50 lg:hidden;
+  }
+  
+  .mobile-sidebar {
+    @apply fixed left-0 top-0 h-full w-64 bg-dark-900/95 backdrop-blur-xl border-r border-primary-500/20 transform transition-transform duration-300 z-50;
+  }
+  
+  .gradient-text {
+    @apply bg-gradient-to-r from-violet-400 via-purple-400 to-blue-400 bg-clip-text text-transparent;
+  }
+  
+  .gradient-text-secondary {
+    @apply bg-gradient-to-r from-blue-400 via-cyan-400 to-teal-400 bg-clip-text text-transparent;
+  }
+  
+  .glow-violet {
+    box-shadow: 0 0 20px rgba(139, 92, 246, 0.3), 0 0 40px rgba(139, 92, 246, 0.1);
+  }
+  
+  .glow-blue {
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.3), 0 0 40px rgba(59, 130, 246, 0.1);
+  }
+  
+  .loading-spinner {
+    @apply animate-spin rounded-full;
+  }
+  
+  .modal-overlay {
+    @apply fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-4;
+  }
+  
+  .modal-content {
+    @apply bg-gradient-card rounded-xl border border-primary-500/20 shadow-glass backdrop-blur-md max-w-md w-full max-h-[90vh] overflow-y-auto;
+  }
+  
+  .form-group {
+    @apply space-y-2;
+  }
+  
+  .form-label {
+    @apply text-sm font-medium text-gray-300;
+  }
+  
+  .table-container {
+    @apply overflow-x-auto rounded-lg border border-primary-500/20;
+  }
+  
+  .table-header {
+    @apply bg-dark-800/50 text-gray-300 font-semibold text-sm uppercase tracking-wide;
+  }
+  
+  .table-cell {
+    @apply px-4 py-3 text-sm;
+  }
+  
+  .responsive-grid {
+    @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6;
+  }
+  
+  .responsive-flex {
+    @apply flex flex-col sm:flex-row items-start sm:items-center gap-4;
+  }
+  
+  /* Mobile-first responsive utilities */
+  .mobile-hidden {
+    @apply hidden sm:block;
+  }
+  
+  .mobile-only {
+    @apply block sm:hidden;
+  }
+  
+  .tablet-hidden {
+    @apply hidden md:block;
+  }
+  
+  .desktop-only {
+    @apply hidden lg:block;
+  }
+  
+  /* Touch-friendly button sizes for mobile */
+  .btn-touch {
+    @apply min-h-[44px] min-w-[44px] touch-manipulation;
+  }
+  
+  /* Improved mobile table styles */
+  .mobile-table {
+    @apply block sm:table w-full;
+  }
+  
+  .mobile-table-row {
+    @apply block sm:table-row border border-primary-500/20 rounded-lg mb-4 sm:mb-0 sm:border-0 sm:rounded-none p-4 sm:p-0;
+  }
+  
+  .mobile-table-cell {
+    @apply block sm:table-cell text-left sm:text-left pb-2 sm:pb-0 sm:px-4 sm:py-3;
+  }
+  
+  .mobile-table-cell:before {
+    content: attr(data-label) ": ";
+    @apply font-medium text-gray-300 sm:hidden;
+  }
+  
+  /* Responsive text sizes */
+  .text-responsive-xs {
+    @apply text-xs sm:text-sm;
+  }
+  
+  .text-responsive-sm {
+    @apply text-sm sm:text-base;
+  }
+  
+  .text-responsive-base {
+    @apply text-base sm:text-lg;
+  }
+  
+  .text-responsive-lg {
+    @apply text-lg sm:text-xl;
+  }
+  
+  .text-responsive-xl {
+    @apply text-xl sm:text-2xl;
+  }
+  
+  /* Responsive spacing */
+  .space-responsive {
+    @apply space-y-4 sm:space-y-6;
+  }
+  
+  .gap-responsive {
+    @apply gap-4 sm:gap-6;
+  }
+  
+  .p-responsive {
+    @apply p-4 sm:p-6;
+  }
+  
+  .px-responsive {
+    @apply px-4 sm:px-6;
+  }
+  
+  .py-responsive {
+    @apply py-4 sm:py-6;
+  }
+  
+  /* Mobile-optimized modals */
+  .modal-mobile {
+    @apply fixed inset-0 sm:inset-auto sm:relative sm:max-w-md sm:mx-auto sm:mt-20;
+  }
+  
+  /* Improved mobile scrolling */
+  .scroll-smooth-mobile {
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+  }
+  
+  /* Mobile-friendly focus states */
+  .focus-mobile {
+    @apply focus:outline-none focus:ring-2 focus:ring-primary-500/50 focus:border-primary-500;
+  }
+  
+  /* Responsive card layouts */
+  .card-mobile {
+    @apply card mx-4 sm:mx-0;
+  }
+  
+  /* Mobile navigation improvements */
+  .nav-mobile {
+    @apply fixed bottom-0 left-0 right-0 bg-dark-900/95 backdrop-blur-xl border-t border-primary-500/20 p-4 sm:hidden;
+  }
+  
+  /* Responsive grid improvements */
+  .grid-responsive-1 {
+    @apply grid grid-cols-1;
+  }
+  
+  .grid-responsive-2 {
+    @apply grid grid-cols-1 sm:grid-cols-2;
+  }
+  
+  .grid-responsive-3 {
+    @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3;
+  }
+  
+  .grid-responsive-4 {
+    @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4;
+  }
+  
+  /* Mobile-optimized animations */
+  @media (prefers-reduced-motion: reduce) {
+    .loading-spinner {
+      animation: none;
+    }
+    
+    .btn-primary,
+    .btn-secondary,
+    .btn-danger,
+    .btn-success,
+    .btn-warning {
+      transform: none;
+      transition: none;
+    }
+  }
+  
+  /* High contrast mode support */
+  @media (prefers-contrast: high) {
+    .card,
+    .glass-card {
+      border-width: 2px;
+    }
+    
+    .btn-primary,
+    .btn-secondary {
+      border-width: 2px;
+    }
+  }
+}

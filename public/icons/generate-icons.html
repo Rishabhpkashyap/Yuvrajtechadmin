@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Generate PWA Icons</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; background: #0f172a; color: white; }
+        canvas { border: 1px solid #333; margin: 10px; }
+        .icon-grid { display: flex; flex-wrap: wrap; gap: 10px; }
+        .icon-item { text-align: center; }
+    </style>
+</head>
+<body>
+    <h1>PWA Icon Generator for MOD QUOTEX</h1>
+    <p>This will generate all required PWA icons. Right-click each canvas and "Save image as..."</p>
+    
+    <div class="icon-grid" id="iconGrid"></div>
+
+    <script>
+        const sizes = [72, 96, 128, 144, 152, 192, 384, 512];
+        const iconGrid = document.getElementById('iconGrid');
+
+        sizes.forEach(size => {
+            const container = document.createElement('div');
+            container.className = 'icon-item';
+            
+            const canvas = document.createElement('canvas');
+            canvas.width = size;
+            canvas.height = size;
+            canvas.id = `icon-${size}`;
+            
+            const ctx = canvas.getContext('2d');
+            
+            // Create gradient background
+            const gradient = ctx.createLinearGradient(0, 0, size, size);
+            gradient.addColorStop(0, '#1e293b');
+            gradient.addColorStop(1, '#0f172a');
+            ctx.fillStyle = gradient;
+            ctx.fillRect(0, 0, size, size);
+            
+            // Add border
+            ctx.strokeStyle = '#64748b';
+            ctx.lineWidth = 2;
+            ctx.strokeRect(1, 1, size-2, size-2);
+            
+            // Add text
+            ctx.fillStyle = '#f1f5f9';
+            ctx.font = `bold ${size/8}px Arial`;
+            ctx.textAlign = 'center';
+            ctx.textBaseline = 'middle';
+            ctx.fillText('CS', size/2, size/2 - size/16);
+            
+            ctx.font = `${size/12}px Arial`;
+            ctx.fillText('ADMIN', size/2, size/2 + size/8);
+            
+            const label = document.createElement('p');
+            label.textContent = `${size}x${size} - icon-${size}x${size}.png`;
+            
+            container.appendChild(canvas);
+            container.appendChild(label);
+            iconGrid.appendChild(container);
+        });
+    </script>
+</body>
+</html>
