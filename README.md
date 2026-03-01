@@ -1,6 +1,6 @@
-# Trader Nidhi Admin Panel
+# Yuvraj Tech Admin Panel
 
-A professional, mobile-first admin panel for Trader Nidhi license management built with Next.js, TypeScript, and Firebase.
+A professional, mobile-first admin panel for Yuvraj Tech license management built with Next.js, TypeScript, and Firebase.
 
 ## ✨ Features
 
@@ -235,4 +235,4 @@ For support, please contact the development team or open an issue in the reposit
 
 ---
 
-Made with ❤️ for Trader Nidhi
+Made with ❤️ for Yuvraj Tech

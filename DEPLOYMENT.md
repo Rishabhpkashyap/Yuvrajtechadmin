@@ -1,6 +1,6 @@
-# Deployment Guide - Trader Nidhi Admin Panel
+# Deployment Guide - Yuvraj Tech Admin Panel
 
-This guide will help you deploy the Trader Nidhi Admin Panel to production.
+This guide will help you deploy the Yuvraj Tech Admin Panel to production.
 
 ## 📋 Pre-Deployment Checklist
 
@@ -321,7 +321,7 @@ If you encounter issues:
 
 ## 🎉 Success!
 
-Once deployed, your Trader Nidhi Admin Panel will be accessible to manage licenses from anywhere!
+Once deployed, your Yuvraj Tech Admin Panel will be accessible to manage licenses from anywhere!
 
 Remember to:
 - Keep dependencies updated

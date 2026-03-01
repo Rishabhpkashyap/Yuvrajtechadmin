@@ -95,7 +95,7 @@ STEP 7: COMMIT KARO
 ================================================================================
 
 1. Neeche "Summary" box mein likho:
-   Initial commit: Trader Nidhi Admin Panel
+   Initial commit: Yuvraj Tech Admin Panel
 
 2. "Description" box mein likho (optional):
    - Mobile-first admin panel for license management
@@ -115,7 +115,7 @@ STEP 8: GITHUB PE PUBLISH KARO
 
 3. Dialog box mein:
    - Name: TraderNidhi (already filled)
-   - Description: Trader Nidhi Admin Panel - License Management System
+   - Description: Yuvraj Tech Admin Panel - License Management System
    - ✅ Keep this code private (check karo agar private chahiye)
    - Organization: None (apna personal account)
 
@@ -140,7 +140,7 @@ STEP 9: VERIFY KARO
 
 3. Repository description add karo:
    - Settings > General
-   - Description: "Mobile-first admin panel for Trader Nidhi license management"
+   - Description: "Mobile-first admin panel for Yuvraj Tech license management"
    - Website: (agar deploy kiya toh URL)
    - Topics: nextjs, typescript, firebase, admin-panel, pwa
 
@@ -198,7 +198,7 @@ Ab kya karo:
 CONGRATULATIONS! 🎉
 ================================================================================
 
-Aapka Trader Nidhi Admin Panel ab GitHub pe hai!
+Aapka Yuvraj Tech Admin Panel ab GitHub pe hai!
 
 Repository: https://github.com/Rishabhpkashyap/TraderNidhi
 

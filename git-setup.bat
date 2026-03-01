@@ -1,10 +1,10 @@
 @echo off
-REM Trader Nidhi Admin Panel - Git Setup Script (Windows)
+REM Yuvraj Tech Admin Panel - Git Setup Script (Windows)
 REM This script initializes the git repository and pushes to GitHub
 
 echo.
 echo ========================================
-echo Trader Nidhi Admin Panel - Git Setup
+echo Yuvraj Tech Admin Panel - Git Setup
 echo ========================================
 echo.
 
@@ -30,7 +30,7 @@ if %ERRORLEVEL% NEQ 0 goto :error
 
 echo.
 echo [3/6] Creating initial commit...
-git commit -m "Initial commit: Trader Nidhi Admin Panel - Mobile-first admin panel for license management - Dark minimal UI theme - Firebase integration for real-time data - PWA support with offline functionality - TypeScript + Next.js 13 App Router - Bottom navigation for mobile UX - Secure authentication system"
+git commit -m "Initial commit: Yuvraj Tech Admin Panel - Mobile-first admin panel for license management - Dark minimal UI theme - Firebase integration for real-time data - PWA support with offline functionality - TypeScript + Next.js 13 App Router - Bottom navigation for mobile UX - Secure authentication system"
 if %ERRORLEVEL% NEQ 0 goto :error
 
 echo.

@@ -1,10 +1,10 @@
 ╔════════════════════════════════════════════════════════════════════════════╗
-║                    TRADER NIDHI - QUICK REFERENCE CARD                     ║
+║                    Yuvraj Tech - QUICK REFERENCE CARD                     ║
 ╚════════════════════════════════════════════════════════════════════════════╝
 
 📦 PROJECT DETAILS
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-Name:           Trader Nidhi Admin Panel
+Name:           Yuvraj Tech Admin Panel
 Repository:     https://github.com/Rishabhpkashyap/TraderNidhi
 Developer:      Rishabhpkashyap
 Email:          Rishabhkashyap.pr@gmail.com

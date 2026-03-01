@@ -1,5 +1,5 @@
 ================================================================================
-TRADER NIDHI ADMIN PANEL - GITHUB PE UPLOAD KAISE KARE
+Yuvraj Tech ADMIN PANEL - GITHUB PE UPLOAD KAISE KARE
 ================================================================================
 
 Aapke system mein Git install nahi hai. Do tarike hain upload karne ke:
@@ -65,7 +65,7 @@ STEP 4: Publish Karo
 1. Upar "Publish repository" button dikhega
 2. Us pe click karo
 3. Repository name: TraderNidhi
-4. Description: "Trader Nidhi Admin Panel - License Management System"
+4. Description: "Yuvraj Tech Admin Panel - License Management System"
 5. "Keep this code private" check karo (agar private chahiye)
 6. "Publish repository" pe click karo
 7. Done! ✅
@@ -78,7 +78,7 @@ STEP 1: GitHub pe Repository Banao
 -----------------------------------
 1. https://github.com/new pe jao
 2. Repository name: TraderNidhi
-3. Description: "Trader Nidhi Admin Panel"
+3. Description: "Yuvraj Tech Admin Panel"
 4. Private ya Public select karo
 5. "Create repository" pe click karo
 
@@ -88,7 +88,7 @@ STEP 2: Files Upload Karo
 2. Apne project ke saare files select karo
    (EXCEPT .env file - wo mat upload karo!)
 3. Drag and drop karo ya "choose your files" se select karo
-4. Commit message likho: "Initial commit: Trader Nidhi Admin Panel"
+4. Commit message likho: "Initial commit: Yuvraj Tech Admin Panel"
 5. "Commit changes" pe click karo
 
 ⚠️ IMPORTANT: .env file upload mat karna! Sirf .env.example upload karo

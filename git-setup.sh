@@ -1,9 +1,9 @@
 #!/bin/bash
 
-# Trader Nidhi Admin Panel - Git Setup Script
+# Yuvraj Tech Admin Panel - Git Setup Script
 # This script initializes the git repository and pushes to GitHub
 
-echo "🚀 Setting up Git repository for Trader Nidhi Admin Panel..."
+echo "🚀 Setting up Git repository for Yuvraj Tech Admin Panel..."
 echo ""
 
 # Initialize git repository
@@ -16,7 +16,7 @@ git add .
 
 # Create initial commit
 echo "💾 Creating initial commit..."
-git commit -m "Initial commit: Trader Nidhi Admin Panel
+git commit -m "Initial commit: Yuvraj Tech Admin Panel
 
 - Mobile-first admin panel for license management
 - Dark minimal UI theme

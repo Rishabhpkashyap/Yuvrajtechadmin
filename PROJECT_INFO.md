@@ -1,13 +1,13 @@
-# Trader Nidhi Admin Panel - Project Information
+# Yuvraj Tech Admin Panel - Project Information
 
 ## 📱 Project Overview
 
-**Trader Nidhi Admin Panel** is a modern, mobile-first web application designed for managing software licenses. Built with cutting-edge technologies, it provides a seamless experience for administrators to create, manage, and monitor licenses in real-time.
+**Yuvraj Tech Admin Panel** is a modern, mobile-first web application designed for managing software licenses. Built with cutting-edge technologies, it provides a seamless experience for administrators to create, manage, and monitor licenses in real-time.
 
 ## 🎯 Purpose
 
 This admin panel serves as a centralized system for:
-- Managing software licenses for Trader Nidhi application
+- Managing software licenses for Yuvraj Tech application
 - Tracking license activation and device binding
 - Monitoring license usage and status
 - Providing real-time analytics and insights
@@ -279,4 +279,4 @@ Special thanks to:
 
 ---
 
-Made with ❤️ for Trader Nidhi
+Made with ❤️ for Yuvraj Tech

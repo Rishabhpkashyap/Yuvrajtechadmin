@@ -42,7 +42,7 @@ export default function LoginPage() {
           </div>
           
           <h1 className="text-3xl font-bold text-white mb-1">
-            Trader Nidhi
+            Yuvraj Tech
           </h1>
           <p className="text-sm text-zinc-500">
             Admin Portal
@@ -128,7 +128,7 @@ export default function LoginPage() {
         {/* Footer */}
         <div className="mt-6 text-center">
           <p className="text-xs text-zinc-600">
-            © 2026 Trader Nidhi. All rights reserved.
+            © 2026 Yuvraj Tech. All rights reserved.
           </p>
         </div>
       </div>

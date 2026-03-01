@@ -1,5 +1,5 @@
 ================================================================================
-TRADER NIDHI ADMIN PANEL - GIT UPLOAD INSTRUCTIONS
+Yuvraj Tech ADMIN PANEL - GIT UPLOAD INSTRUCTIONS
 ================================================================================
 
 Your codebase is now ready to be uploaded to GitHub!
@@ -10,7 +10,7 @@ Repository URL: https://github.com/Rishabhpkashyap/TraderNidhi
 WHAT'S BEEN PREPARED:
 ================================================================================
 
-✅ Updated README.md with Trader Nidhi branding
+✅ Updated README.md with Yuvraj Tech branding
 ✅ Created .env.example with detailed setup instructions
 ✅ Created QUICK_START.md for 5-minute setup
 ✅ Created DEPLOYMENT.md with deployment guides
@@ -51,7 +51,7 @@ git init
 git add .
 
 # Step 3: Create initial commit
-git commit -m "Initial commit: Trader Nidhi Admin Panel"
+git commit -m "Initial commit: Yuvraj Tech Admin Panel"
 
 # Step 4: Rename branch to main
 git branch -M main
@@ -93,7 +93,7 @@ Once uploaded successfully:
 1. Go to: https://github.com/Rishabhpkashyap/TraderNidhi
 
 2. Add repository description:
-   "Mobile-first admin panel for Trader Nidhi license management. Built with Next.js, TypeScript, and Firebase."
+   "Mobile-first admin panel for Yuvraj Tech license management. Built with Next.js, TypeScript, and Firebase."
 
 3. Add topics/tags:
    - nextjs

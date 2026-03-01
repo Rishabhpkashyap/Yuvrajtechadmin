@@ -116,7 +116,7 @@ export default function Dashboard() {
             <div className="flex items-center space-x-2">
               <Shield className="w-5 h-5 text-zinc-400" />
               <div>
-                <h1 className="text-sm font-semibold text-white">Trader Nidhi</h1>
+                <h1 className="text-sm font-semibold text-white">Yuvraj Tech</h1>
                 <p className="text-xs text-zinc-500">Admin Panel</p>
               </div>
             </div>

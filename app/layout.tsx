@@ -4,8 +4,8 @@ import { Toaster } from 'react-hot-toast'
 import { AuthProvider } from '@/lib/auth-context'
 
 export const metadata: Metadata = {
-  title: 'Trader Nidhi - Admin Panel',
-  description: 'Professional license management system for Trader Nidhi',
+  title: 'Yuvraj Tech - Admin Panel',
+  description: 'Professional license management system for Yuvraj Tech',
   manifest: '/manifest.json',
   themeColor: '#000000',
   appleWebApp: {
@@ -18,14 +18,14 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: 'website',
-    siteName: 'Trader Nidhi Admin Panel',
-    title: 'Trader Nidhi - Admin Panel',
-    description: 'Professional license management system for Trader Nidhi',
+    siteName: 'Yuvraj Tech Admin Panel',
+    title: 'Yuvraj Tech - Admin Panel',
+    description: 'Professional license management system for Yuvraj Tech',
   },
   twitter: {
     card: 'summary',
-    title: 'Trader Nidhi - Admin Panel',
-    description: 'Professional license management system for Trader Nidhi',
+    title: 'Yuvraj Tech - Admin Panel',
+    description: 'Professional license management system for Yuvraj Tech',
   },
 }
 

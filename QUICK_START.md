@@ -1,4 +1,4 @@
-# Quick Start Guide - Trader Nidhi Admin Panel
+# Quick Start Guide - Yuvraj Tech Admin Panel
 
 Get your admin panel up and running in 5 minutes!
 
@@ -36,7 +36,7 @@ git init
 git add .
 
 # Create initial commit
-git commit -m "Initial commit: Trader Nidhi Admin Panel"
+git commit -m "Initial commit: Yuvraj Tech Admin Panel"
 
 # Rename branch to main
 git branch -M main
@@ -204,7 +204,7 @@ Now that your admin panel is running:
 
 ## 🎉 You're All Set!
 
-Your Trader Nidhi Admin Panel is now ready to manage licenses!
+Your Yuvraj Tech Admin Panel is now ready to manage licenses!
 
 For support or questions, open an issue on GitHub.
 
